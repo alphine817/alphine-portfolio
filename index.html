@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alphine Jepkirui | Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<footer>
+    <p>© 2026 Alphine Jepkirui | Built with ❤️</p>
+</footer>
+
+<body>
+
+    <nav>
+        <div class="logo">Alphine</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button onclick="toggleMode()" class="mode-toggle">
+            🌙
+        </button>
+    </nav>
+
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="profile-container">
+                <img src="assets/images/profile.jpg" alt="Profile Image" class="profile-img">
+            </div>
+
+            <h1>Alphine Jepkirui</h1>
+
+
+            <h3 class="typing-text"></h3>
+
+            <button onclick="scrollToProjects()">View My Work</button>
+            <a href="assets/cv.pdf" download class="cv-btn">
+                Download CV
+            </a>
+
+            <div class="social-icons">
+                <a href="https://github.com/alphine817" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:jepkiruialphine@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate frontend developer focused on building responsive,
+            clean and user-friendly websites using modern web technologies.
+        </p>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <h3>E-commerce Website</h3>
+            <p>Built using HTML, CSS and JavaScript.</p>
+            <div class="slider">
+                <img src="assets/images/project1-1.png" class="slide active">
+                <img src="assets/images/project1-2.png" class="slide">
+                <img src="assets/images/project1-3.png" class="slide">
+
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Glow & Go Salon</h3>
+            <p>A modern beauty salon website with service listings, booking section and responsive design.</p>
+            <div class="slider">
+
+                <img src="assets/images/salon-1.png" class="slide active">
+                <img src="assets/images/salon-2.png" class="slide">
+                <img src="assets/images/salon-3.png" class="slide">
+                <img src="assets/images/salon-4.png" class="slide">
+
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Figma</li>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: jepkiruialphine@gmail.com</p>
+        <p>Phone: 0721735254</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
