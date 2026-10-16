@@ -498,38 +498,91 @@ section {
 .project-card {
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    gap: 16px;
+    padding: 18px;
+    background: linear-gradient(180deg, rgba(18, 36, 31, 0.96), rgba(12, 22, 18, 0.96));
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 22px 38px rgba(0, 0, 0, 0.12);
+    border-color: rgba(143, 227, 173, 0.35);
+    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.18);
 }
 
 .project-image {
+    position: relative;
     width: 100%;
-    height: 210px;
+    height: 220px;
     overflow: hidden;
-    border-radius: 14px;
+    border-radius: 16px;
     border: 1px solid var(--line);
     background: rgba(255, 255, 255, 0.02);
+}
+
+.project-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(7, 17, 13, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--primary-strong);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, filter 0.35s ease;
 }
 
 .project-card:hover .project-image img {
-    transform: scale(1.04);
+    transform: scale(1.05);
+    filter: saturate(1.08);
+}
+
+.project-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
+.project-card h3 {
+    margin: 0;
+    line-height: 1.35;
+    font-size: 1.2rem;
 }
 
 .project-card p {
     color: var(--text);
     font-weight: 500;
+    margin: 0;
 }
 
 .tags {
@@ -544,7 +597,7 @@ section {
     border: 1px solid var(--line);
     border-radius: 999px;
     padding: 7px 12px;
-    font-size: 0.76rem;
+    font-size: 0.74rem;
     font-weight: 700;
     color: var(--primary-strong);
 }
