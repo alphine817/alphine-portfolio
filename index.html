@@ -3,120 +3,268 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Alphine Jepkirui | Frontend Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphine Jepkirui | Computer Science Student</title>
+    <meta name="description" content="Portfolio of Alphine Jepkirui, a Computer Science student specializing in data analysis, IT support, database management, and software development.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<footer>
-    <p>© 2026 Alphine Jepkirui | Built with ❤️</p>
-</footer>
 
 <body>
-
     <nav>
         <div class="logo">Alphine</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <button onclick="toggleMode()" class="mode-toggle">
-            🌙
-        </button>
+        <button onclick="toggleMode()" class="mode-toggle" aria-label="Toggle theme">🌙</button>
     </nav>
 
-
-    <section class="hero" id="home">
-
+    <header class="hero" id="home">
         <div class="hero-content">
-
             <div class="profile-container">
-                <img src="assets/images/profile.jpg" alt="Profile Image" class="profile-img">
+                <img src="assets/images/profile.jpg" alt="Alphine Jepkirui profile" class="profile-img">
             </div>
 
+            <p class="eyebrow">Computer Science Student | Data Analysis & IT Support</p>
             <h1>Alphine Jepkirui</h1>
+            <h3 class="typing-text" aria-live="polite"></h3>
 
+            <p class="lead">
+                Detail-oriented Computer Science student with a strong foundation in database management,
+                software systems, data organization, and user-friendly digital tools.
+            </p>
 
-            <h3 class="typing-text"></h3>
+            <div class="cta-row">
+                <button onclick="scrollToProjects()">View My Work</button>
+                <a href="assets/cv.pdf" download class="cv-btn">Download CV</a>
+            </div>
 
-            <button onclick="scrollToProjects()">View My Work</button>
-            <a href="assets/cv.pdf" download class="cv-btn">
-                Download CV
-            </a>
+            <div class="contact-mini">
+                <span><i class="fas fa-phone"></i> 0721735254</span>
+                <span><i class="fas fa-envelope"></i> kemmeyjepkirui@gmail.com</span>
+            </div>
 
             <div class="social-icons">
-                <a href="https://github.com/alphine817" target="_blank">
+                <a href="https://github.com/alphine817" target="_blank" rel="noreferrer" aria-label="GitHub Profile">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:jepkiruialphine@gmail.com">
+                <a href="mailto:kemmeyjepkirui@gmail.com" aria-label="Email Alphine">
                     <i class="fas fa-envelope"></i>
                 </a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate frontend developer focused on building responsive,
-            clean and user-friendly websites using modern web technologies.
-        </p>
-    </section>
-
-    <section class="projects" id="projects">
-        <h2>My Projects</h2>
-
-        <div class="project-card">
-            <h3>E-commerce Website</h3>
-            <p>Built using HTML, CSS and JavaScript.</p>
-            <div class="slider">
-                <img src="assets/images/project1-1.png" class="slide active">
-                <img src="assets/images/project1-2.png" class="slide">
-                <img src="assets/images/project1-3.png" class="slide">
-
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
+                <a href="https://alphine817.github.io/alphine-portfolio" target="_blank" rel="noreferrer" aria-label="Portfolio Website">
+                    <i class="fas fa-globe"></i>
+                </a>
             </div>
         </div>
+    </header>
 
-        <div class="project-card">
-            <h3>Glow & Go Salon</h3>
-            <p>A modern beauty salon website with service listings, booking section and responsive design.</p>
-            <div class="slider">
-
-                <img src="assets/images/salon-1.png" class="slide active">
-                <img src="assets/images/salon-2.png" class="slide">
-                <img src="assets/images/salon-3.png" class="slide">
-                <img src="assets/images/salon-4.png" class="slide">
-
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-
+    <main>
+        <section class="about" id="about">
+            <div class="section-heading">
+                <span>About Me</span>
+                <h2>Career Objective</h2>
             </div>
-        </div>
-    </section>
+            <p>
+                A detail-oriented Computer Science student with a strong foundation in data management,
+                software systems, and IT support. Proficient in database management (MySQL), Python,
+                data organization, and building user-friendly digital tools. Seeking the Data Analysis & IT Intern
+                position at The Toolkit Skills & Innovation Hub to assist in consolidating, reviewing, and
+                managing alumni data systems while ensuring high data accuracy and quality.
+            </p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+        <section class="education" id="education">
+            <div class="section-heading">
+                <span>Education</span>
+                <h2>Academic Background</h2>
+            </div>
 
-        <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-            <li>Figma</li>
-        </ul>
-    </section>
+            <div class="edu-card">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p class="institution">Laikipia University</p>
+                <p class="date">2022 – 2026</p>
+                <p><strong>Status:</strong> Coursework Completed (Awaiting Graduation)</p>
+                <p><strong>Relevant Coursework:</strong> Database Management Systems, Systems Analysis & Design,
+                    Information Systems, Data Structures & Algorithms, Object-Oriented Programming.</p>
+            </div>
+        </section>
 
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: jepkiruialphine@gmail.com</p>
-        <p>Phone: 0721735254</p>
-    </section>
+        <section class="skills" id="skills">
+            <div class="section-heading">
+                <span>Skills</span>
+                <h2>Technical & Professional Strengths</h2>
+            </div>
+
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <h3>Data Analysis & Database Management</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>Data Cleaning & Validation</li>
+                        <li>Relational Databases</li>
+                        <li>Python (Basic Data Manipulation)</li>
+                        <li>Record Integrity</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>IT Support & Productivity</h3>
+                    <ul>
+                        <li>Microsoft Office Excel, Word, PowerPoint</li>
+                        <li>Information Systems Support</li>
+                        <li>System Administration Basics</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Software & Web Development</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Git/GitHub</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>UI/UX & Systems Design</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Prototyping</li>
+                        <li>Wireframing</li>
+                        <li>User-Centric Data Interfaces</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Data Accuracy & Attention to Detail</li>
+                        <li>Problem-Solving</li>
+                        <li>Team Collaboration</li>
+                        <li>Structured Communication</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="section-heading">
+                <span>Experience</span>
+                <h2>Work History</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="job-card">
+                    <div class="job-header">
+                        <h3>Software Engineering Intern</h3>
+                        <span>Lish AI Labs – Nakuru, Kenya</span>
+                    </div>
+                    <p class="date">May 2026 – July 2026</p>
+                    <ul>
+                        <li>Designed relational database schemas using Supabase/PostgreSQL and implemented Row-Level Security for secure data access.</li>
+                        <li>Integrated RESTful APIs with Python Flask to process, validate, and clean incoming data requests.</li>
+                        <li>Conducted end-to-end testing, debugged database migration scripts, and monitored CI workflows for data reliability.</li>
+                        <li>Prepared technical documentation, project reports, and monthly pitches for system architecture and security.</li>
+                        <li>Worked closely with cross-functional teams in an agile environment using Git/GitHub.</li>
+                    </ul>
+                </article>
+
+                <article class="job-card">
+                    <div class="job-header">
+                        <h3>Data Annotation Trainee</h3>
+                        <span>Lish AI Labs – Nakuru, Kenya</span>
+                    </div>
+                    <p class="date">August 2026 – Present</p>
+                    <ul>
+                        <li>Labeled and annotated video and image datasets according to strict quality guidelines.</li>
+                        <li>Verified, reviewed, and cleaned data batches to ensure high accuracy and consistency.</li>
+                        <li>Utilized specialized annotation platforms to complete high-volume data labeling tasks efficiently.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-heading">
+                <span>Projects</span>
+                <h2>Selected Work</h2>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Smart Offline Dynamic QR Code Attendance System</h3>
+                    <p>Designed an offline attendance management system using dynamic, time-sensitive QR codes to streamline record collection and prevent unauthorized check-ins.</p>
+                    <div class="tags">
+                        <span>QR Code</span>
+                        <span>Attendance</span>
+                        <span>Data Logging</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>PropStat Pro</h3>
+                    <p>Built a full-stack rental property inspection and listing system with role-based management portals and public listings using Python, SQLAlchemy, and React.</p>
+                    <div class="tags">
+                        <span>Flask</span>
+                        <span>React</span>
+                        <span>SQLAlchemy</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Vault OS</h3>
+                    <p>Collaborated on a multi-platform digital wallet using React, Flutter, and Supabase for real-time database management, authentication, and transaction workflows.</p>
+                    <div class="tags">
+                        <span>Supabase</span>
+                        <span>Flutter</span>
+                        <span>CI/CD</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Personal Portfolio Web Application</h3>
+                    <p>Developed and deployed a responsive portfolio hosted on GitHub Pages using HTML, CSS, and JavaScript to present technical skills and work professionally.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://alphine817.github.io/alphine-portfolio" target="_blank" rel="noreferrer" class="project-link">View Project</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="section-heading">
+                <span>Contact</span>
+                <h2>Let's Connect</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-item"><i class="fas fa-phone"></i><span>0721735254</span></div>
+                <div class="contact-item"><i class="fas fa-envelope"></i><span>kemmeyjepkirui@gmail.com</span></div>
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>P.O. BOX 1100-20300, Nyahururu</span></div>
+                <div class="contact-item"><i class="fab fa-github"></i><span>github.com/alphine817</span></div>
+                <div class="contact-item"><i class="fas fa-globe"></i><span>alphine817.github.io/alphine-portfolio</span></div>
+            </div>
+
+            <p class="references">References available upon request.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Alphine Jepkirui | Built with passion for data and technology.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
