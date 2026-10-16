@@ -155,8 +155,8 @@ window.addEventListener("DOMContentLoaded", () => {
         modeToggle.addEventListener("click", toggleMode);
     }
 
-    document.querySelectorAll(".project-view-btn").forEach((button) => {
-        button.addEventListener("click", () => openProjectGallery(button.dataset.project));
+    document.querySelectorAll(".project-card[data-project]").forEach((card) => {
+        card.addEventListener("click", () => openProjectGallery(card.dataset.project));
     });
 
     if (closeModalBtn) {

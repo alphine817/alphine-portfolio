@@ -437,8 +437,8 @@ section {
 .skill-grid,
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
 }
 
 .skill-card,
@@ -504,7 +504,9 @@ section {
     border: 1px solid var(--line);
     border-radius: 22px;
     overflow: hidden;
+    cursor: pointer;
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    min-height: 560px;
 }
 
 .project-card:hover {
@@ -516,18 +518,64 @@ section {
 .project-image {
     position: relative;
     width: 100%;
-    height: 220px;
+    aspect-ratio: 1 / 1;
+    height: auto;
     overflow: hidden;
     border-radius: 16px;
     border: 1px solid var(--line);
     background: rgba(255, 255, 255, 0.02);
 }
 
+.stacked-image {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.stacked-image img {
+    position: absolute;
+    inset: 12px 18px 12px 18px;
+    width: calc(100% - 36px);
+    height: calc(100% - 24px);
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.stacked-image .stack-one {
+    transform: translateX(0) rotate(-3deg);
+    z-index: 1;
+}
+
+.stacked-image .stack-two {
+    transform: translateX(18px) rotate(2deg);
+    z-index: 2;
+}
+
+.stacked-image .stack-three {
+    transform: translateX(36px) rotate(5deg);
+    z-index: 3;
+}
+
+.project-card:hover .stack-one {
+    transform: translateX(0) rotate(-2deg) scale(1.02);
+}
+
+.project-card:hover .stack-two {
+    transform: translateX(18px) rotate(1deg) scale(1.02);
+}
+
+.project-card:hover .stack-three {
+    transform: translateX(36px) rotate(4deg) scale(1.02);
+}
+
 .project-badge {
     position: absolute;
     top: 12px;
     left: 12px;
-    z-index: 2;
+    z-index: 4;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -860,6 +908,10 @@ footer {
 
     .profile-container {
         max-width: 290px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
