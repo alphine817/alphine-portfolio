@@ -150,8 +150,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const modeToggle = document.querySelector(".mode-toggle");
     if (modeToggle) {
-        modeToggle.textContent = "🌙";
-        modeToggle.setAttribute("aria-label", "Switch to light mode");
+        modeToggle.textContent = "☀️";
+        modeToggle.setAttribute("aria-label", "Switch to dark mode");
         modeToggle.addEventListener("click", toggleMode);
     }
 
